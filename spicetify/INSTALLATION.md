@@ -12,7 +12,9 @@ Copy the `.ini` file to your Matugen templates folder:
 `~/.config/matugen/templates/spotify-colors.ini`
 
 ### Step 2: Configure Matugen
-Add this section to your `~/.config/matugen/config.toml`. The `post_hook` ensures Spotify refreshes automatically:
+Add this section to your `~/.config/matugen/config.toml`. 
+
+**Note**: This `post_hook` is "smart"—it will automatically detect if your Spicetify backup is outdated (common after updates) and fix it by running `restore backup apply` automatically if the standard apply fails.
 
 ```toml
 [templates.spicetify]
@@ -20,8 +22,8 @@ input_path = '~/.config/matugen/templates/spotify-colors.ini'
 output_path = '~/.config/spicetify/Themes/wal/color.ini'
 post_hook = '''
 if command -v spicetify >/dev/null 2>&1 && [ -d "$HOME/.config/spicetify/Themes/wal" ]; then
-    spicetify apply -n || :
-    hyprctl dispatch sendshortcut "CTRL SHIFT, R, class:^(Spotify)$" || :
+ 	spicetify apply -n || spicetify restore backup apply
+ 	hyprctl dispatch sendshortcut "CTRL SHIFT, R, class:^(Spotify)$" || :
 fi
 '''
 ```

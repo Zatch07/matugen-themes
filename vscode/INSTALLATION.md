@@ -42,6 +42,6 @@ matugen image /path/to/your/wallpaper.png
 ---
 
 ## ✨ Features of this Setup
-*   **Instant Updates**: Because we update `settings.json` directly, colors change the moment you swap wallpapers—no window reload required!
+*   **Instant Updates**: Because we update `settings.json` directly, colors change the moment you swap wallpapers, no window reload required!
 *   **Unified Transparency**: Both the editor and sidebar are set to a glassy, consistent opacity (controlled via the `CC` hex suffix in the template).
 *   **Ethereal Aesthetics**: Custom syntax highlighting mapped to Matugen accents for high readability.

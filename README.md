@@ -19,18 +19,23 @@ Each application has its own dedicated folder. Inside each folder, you will find
 
 ### 💻 Development Tools
 *   **VS Code (Premium)**: Instant, flicker-free color updates for your editor.
+    ![VS Code Showcase](./vscode/VScode.jpg)
 *   **Antigravity**: A dedicated theme for the Antigravity VS Code fork.
+    ![Antigravity Showcase](./antigravity/Antigravity.jpg)
 *   **Neovim (Tokyonight)**: Lua-based color overrides for your terminal editor.
 *   **Doom Emacs**: Real-time theme reloading for the Emacs ecosystem.
 
 ### 🛠️ Terminal & System
 *   **Kitty**: High-performance terminal colors that refresh on the fly.
+    ![Kitty Showcase](./kitty/Kitty.jpg)
 *   **btop**: A stylish system monitor with custom color palettes.
 
 ### 🌐 Web & Social
 *   **Discord (Vesktop)**: Custom CSS for the Midnight theme.
 *   **Spicetify (Spotify)**: Automated color application for your music player.
+    ![Spotify Showcase](./spicetify/spotify.jpg)
 *   **nightTab**: A fully custom browser extension with a Matugen bridge.
+    ![nightTab Showcase](./nighttab/Chrome.jpg)
 
 ---
 
